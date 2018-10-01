@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- WebRTCのライブラリ -->
+  <script src="https://simplewebrtc.com/latest-v2.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrap">
+    <h1>WebRTCサンプル</h1>
+    <div id="local-video"></div>
+    <div id="remote-video"></div>
+  </div>
+  <script>
+    var webrtc = new SimpleWebRTC({
+                    remoteVideosEl: 'remote-video',
+                    autoRequestMedia: true
+                });
+  </script>
+</body>
+</html>
